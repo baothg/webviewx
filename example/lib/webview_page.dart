@@ -47,7 +47,7 @@ class _WebViewXPageState extends State<WebViewXPage> {
                 padding: const EdgeInsets.only(bottom: 20.0),
                 child: Text(
                   'Play around with the buttons below',
-                  style: Theme.of(context).textTheme.headline6,
+                  style: Theme.of(context).textTheme.headlineMedium,
                 ),
               ),
               buildSpace(direction: Axis.vertical, amount: 10.0, flex: false),
@@ -59,7 +59,6 @@ class _WebViewXPageState extends State<WebViewXPage> {
               ),
               Expanded(
                 child: Scrollbar(
-                  isAlwaysShown: true,
                   child: SizedBox(
                     width: min(screenSize.width * 0.8, 512),
                     child: ListView(
